@@ -8,4 +8,8 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "Weather Flex"
-include(":app")
+include(
+    ":app",
+    ":core",
+    ":ui-kit"
+)

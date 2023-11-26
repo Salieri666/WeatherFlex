@@ -59,6 +59,9 @@ android {
 
 dependencies {
 
+    implementation(project(Deps.Project.core))
+    implementation(project(Deps.Project.uikit))
+
     implementation(libs.coreKtx)
     implementation(libs.kotlinCoroutines)
 
