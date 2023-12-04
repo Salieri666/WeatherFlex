@@ -61,6 +61,7 @@ dependencies {
 
     implementation(project(Deps.Project.core))
     implementation(project(Deps.Project.uikit))
+    implementation(project(Deps.Project.startDisplay))
 
     implementation(libs.coreKtx)
     implementation(libs.kotlinCoroutines)

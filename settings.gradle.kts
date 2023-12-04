@@ -11,5 +11,6 @@ rootProject.name = "Weather Flex"
 include(
     ":app",
     ":core",
-    ":ui-kit"
+    ":ui-kit",
+    ":start-display:start-display"
 )
