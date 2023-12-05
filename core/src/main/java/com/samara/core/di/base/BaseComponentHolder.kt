@@ -10,8 +10,8 @@ open class BaseComponentHolder<Component, Dependencies : ComponentDependencies> 
         }
         return get();
     }
-    open fun init(): Component = initializeComponent { createComponent() }
-    open fun init(dependencies: Dependencies): Component = initializeComponent { createComponent(dependencies) }
+    fun init(): Component = initializeComponent { createComponent() }
+    fun init(dependencies: Dependencies): Component = initializeComponent { createComponent(dependencies) }
 
 
     open fun createComponent(): Component = get()
