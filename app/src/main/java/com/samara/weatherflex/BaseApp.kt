@@ -7,6 +7,8 @@ import com.samara.core.di.components.CoreComponent
 import com.samara.core.di.components.CoreComponentDependencies
 import com.samara.core.di.components.CoreComponentHolder
 import com.samara.core.di.components.DaggerAppCoreComponent
+import com.samara.weatherflex.di.AppComponentDependencies
+import com.samara.weatherflex.di.AppComponentHolder
 
 open class BaseApp : Application() {
     private var appComponent: AppCoreComponent? = null
@@ -24,10 +26,8 @@ open class BaseApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        /*AppComponentHolder.init(
-            AppComponentDependencies(
-                coreComponent()
-            )
-        )*/
+        AppComponentHolder.init(
+            AppComponentDependencies(coreComponent())
+        )
     }
 }

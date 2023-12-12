@@ -31,7 +31,7 @@ abstract class BaseVM<S : State>(private val savedStateHandle: SavedStateHandle)
     private val _state = MutableStateFlow(
         savedStateHandle[savedStateKey] ?: initialState
     )
-    private val state = _state.asStateFlow()
+    val state = _state.asStateFlow()
     //---------------
 
     //---Action----

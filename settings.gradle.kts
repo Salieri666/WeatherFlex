@@ -12,5 +12,8 @@ include(
     ":app",
     ":core",
     ":ui-kit",
-    ":start-display:start-display"
+    ":start-display:start-display",
+    ":start-display:start-display-api",
+    ":start-display:start-display-impl",
+    ":start-display:start-display-provider"
 )

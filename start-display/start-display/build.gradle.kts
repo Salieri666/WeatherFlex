@@ -16,8 +16,8 @@ dependencies {
 
     implementation(project(Deps.Project.uikit))
     implementation(project(Deps.Project.core))
-    //implementation(project(Deps.Project.startDisplayApi))
-    //implementation(project(Deps.Project.startDisplayApiProvider))
+    implementation(project(Deps.Project.startDisplayApi))
+    implementation(project(Deps.Project.startDisplayProvider))
 
     implementation(libs.coreKtx)
     implementation(libs.kotlinCoroutines)

@@ -13,9 +13,9 @@ object Deps {
         const val uikit = ":ui-kit"
 
         const val startDisplay = ":start-display:start-display"
-        /*const val mainFilesApi = ":main-files:main-files-api"
-        const val mainFilesProvider = ":main-files:main-files-provider"
-        const val mainFilesImpl = ":main-files:main-files-impl"*/
+        const val startDisplayApi = ":start-display:start-display-api"
+        const val startDisplayImpl = ":start-display:start-display-impl"
+        const val startDisplayProvider = ":start-display:start-display-provider"
     }
 
 }

@@ -1,20 +1,26 @@
 package com.samara.weatherflex.presentation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import com.samara.start_display.presentation.navigation.StartScreenDestination
-import com.samara.weatherflex.presentation.navigation.mainActivityNavigationGraph
+import com.samara.core.presentation.navigation.rememberBaseNavigation
 
 @Composable
 fun MainActivityScreen(
-    navController: NavHostController
+    navController: NavHostController,
+    vm: MainActivityVm
 ) {
+    val state by vm.state.collectAsState();
+
+    val baseNavigation = rememberBaseNavigation(navController)
+
     NavHost(
         navController = navController,
-        startDestination = StartScreenDestination.route,
+        startDestination = state.startDestination,
         builder = {
-            mainActivityNavigationGraph(navController)
+            mainActivityNavigationGraph(baseNavigation)
         }
     )
 }
